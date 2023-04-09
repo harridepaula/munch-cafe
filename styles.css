@@ -1,14 +1,18 @@
+/* COLORS */
+:root {
+--color-darkpink: #F28482;
+--color-lightpink: #F5CAC3;
+--color-cream: #F7EDE2;
+--color-yellow: #F6BD60;
+--color-mint: #84A59D;
+}
+
 /* GENERAL STYLES */
 
 body {
   font-family: "Ubuntu", sans-serif;
   /* sets font family for entire page */
   background-color: #000000;
-}
-
-@font-face /*  Specifies Custom Font to display the text */ {
-  font-family: myFirstFont;
-  src: url(fonts/EMcomic-Bold.ttf);
 }
 
 #loading {
@@ -22,6 +26,12 @@ body {
   opacity: 0.8;
   background-color: #000000;
   z-index: 99;
+}
+
+#pretzel {
+  padding-top:5px;
+  height: 80px;
+  width: 80px;
 }
 
 p {
@@ -52,6 +62,10 @@ a:hover {
   height: 74px;
 }
 
+nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
+  padding-top: 10px;
+}
+
 .navbar-brand {
   font-family: "elinga", "myFirstFont", "Roboto";
   font-weight: 500;
@@ -64,6 +78,11 @@ a:hover {
 /* for each navbar item */ {
   font-size: 1.1rem;
   font-weight: 500;
+}
+
+div#navbarSupportedContent {
+  position: relative;
+  top: -6px;
 }
 
 .fixed-top {
@@ -522,7 +541,7 @@ a:hover {
 
 .eatSure .row {
   width: 100%;
-  padding: 25px 0;
+  padding: 25px 10px;
   margin: auto;
 }
 
@@ -676,7 +695,7 @@ footer a {
 
 .copyright {
   text-align: center;
-  margin: 30px auto 0 auto;
+  margin: 0 auto;
 }
 
 /* TESTIMONIALS SECTION */
@@ -871,15 +890,6 @@ footer a {
   border: 1px solid white;
 }
 
-@media screen and (max-width: 992px) {
-  .navbar-nav {
-    background-color: #F6BD60;
-    text-align: right;
-    width: 150px;
-    border-radius: 10%;
-  }
-}
-
 @media screen and (max-width: 920px) {
   .navbar-brand {
     font-size: 3rem;
@@ -1037,7 +1047,7 @@ footer a {
 
 /* CONTACT US */
 .icon img {
-  width: 3rem;
+  width: 2.5rem;
   height: auto;
 }
 .icon1 img {
@@ -1084,13 +1094,13 @@ footer a {
   font-size: 26px;
   font-weight: 275;
   color: #f7ede2;
+  margin-bottom: 50px;
 }
 .container {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
 }
 
 .container .contactInfo {
@@ -1108,7 +1118,7 @@ footer a {
 .container .contactInfo .box .icon {
   min-width: 4.5rem;
   height: 4.5rem;
-  background: #f7ede2;
+  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1161,7 +1171,7 @@ footer a {
 .contactForm .inputBox span {
   position: absolute;
   left: 0;
-  padding: 5px 0;
+  padding: 5px 10px;
   font-size: 16px;
   margin: 10px 0;
   pointer-events: none;
@@ -1220,7 +1230,10 @@ footer {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding-right: 5%;
+  padding: 10px;
+  scale: 0.8;
+  position: relative;
+  top: -5px;
 }
 
 .socialMediaIcon
@@ -1247,7 +1260,6 @@ footer a {
 
 .copyright {
   text-align: center;
-  margin: 30px auto 0 auto;
 }
 
 /************************ Shopping Cart CSS ********************/
@@ -1375,7 +1387,7 @@ footer a {
 }
 
 .fa-instagram:hover {
-  color: #F6BD60;
+  color: #ee51c7;
   font-size: 2.3rem;
 }
 

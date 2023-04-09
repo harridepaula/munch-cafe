@@ -325,9 +325,9 @@ div#navbarSupportedContent {
 }
 
 /* MENU CARD */
-#momos,
-#chinese,
-#beverages {
+#drinks,
+#food,
+#desserts {
   display: none;
 }
 

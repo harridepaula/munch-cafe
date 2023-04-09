@@ -79,32 +79,32 @@ $(document).ready(function () {
       .siblings("div")
       .children()
       .removeClass("productClicked");
-    if ($(this)[0].className.search("momos productClicked") > -1) {
-      $("#momos").show().siblings("div").hide();
+    if ($(this)[0].className.search("drinks productClicked") > -1) {
+      $("#drinks").show().siblings("div").hide();
 
       $("html, body").animate(
         {
-          scrollTop: $("#momos").offset().top,
+          scrollTop: $("#drinks").offset().top,
         },
         800,
         function () {}
       );
-    } else if ($(this)[0].className.search("chinese productClicked") > -1) {
-      $("#chinese").show().siblings("div").hide();
+    } else if ($(this)[0].className.search("food productClicked") > -1) {
+      $("#food").show().siblings("div").hide();
 
       $("html, body").animate(
         {
-          scrollTop: $("#chinese").offset().top,
+          scrollTop: $("#food").offset().top,
         },
         800,
         function () {}
       );
-    } else if ($(this)[0].className.search("beverages productClicked") > -1) {
-      $("#beverages").show().siblings("div").hide();
+    } else if ($(this)[0].className.search("desserts productClicked") > -1) {
+      $("#desserts").show().siblings("div").hide();
 
       $("html, body").animate(
         {
-          scrollTop: $("#beverages").offset().top,
+          scrollTop: $("#desserts").offset().top,
         },
         800,
         function () {}

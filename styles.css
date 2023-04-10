@@ -231,9 +231,8 @@ div#navbarSupportedContent {
   margin: 50px auto;
 }
 
-#menuSection .container h1 span {
-  font-size: 4.5rem;
-  border: 1px solid #a8763e;
+#menuSection .container b {
+  font-size: 4rem;
   background-color: white;
   color: #6f1a07;
   padding: 1px 5px;
@@ -514,9 +513,8 @@ div#navbarSupportedContent {
   width: 100%;
   }
 
-#aboutSection .about-title span {
-  font-size: 5rem;
-  border: 1px solid #F6BD60;
+.about-title b {
+  font-size: 4rem;
   background-color: white;
   color: #F6BD60;
 }
@@ -709,9 +707,8 @@ footer a {
   margin: 50px auto;
 }
 
-.menu-title span {
-    font-size: 5rem;
-    border: 1px solid #84a59d;
+.menu-title b {
+    font-size: 4rem;
     background-color: white;
     color: #84a59d;
     padding: 0.5rem 2rem;
@@ -728,9 +725,8 @@ footer a {
   margin: 50px auto;
 }
 
-.about-title span {
-  font-size: 5rem;
-  border: 1px solid #84a59d;
+.about-title b {
+  font-size: 4rem;
   background-color: white;
   color: #84a59d;
   padding: 0.5rem 2rem;
@@ -1243,73 +1239,6 @@ padding: 0.5rem;
 
 
 
-@media screen and (max-width: 650px) {
-  .navbar-brand {
-    font-size: 2.5rem;
-    margin-bottom: 5px;
-  }
-
-  .homeHeading {
-    font-size: 2.8rem;
-  }
-
-  .homeHeading span {
-    font-size: 3.6rem;
-  }
-
-  .col-lg-4.col-sm-4.col-4 {
-    padding: 0 6px;
-  }
-
-  .product-box-layout4 .item-figure {
-    height: 130px;
-  }
-
-  .item-content .card-title {
-    font-size: 1.1rem;
-  }
-
-  .product-box-layout4 {
-    padding: 10px;
-  }
-
-  .product-box-layout4 .item-content {
-    padding: 15px 0 0;
-  }
-
-  .col-sm-6.col-12 .card {
-    margin-bottom: 15px;
-  }
-
-  .eatSure {
-    margin-bottom: 30px;
-  }
-
-  .safetyMeasures {
-    margin-top: 12%;
-  }
-
-  .footerHeadingCol h2 {
-    font-size: 2.5rem !important;
-  }
-
-  .socialMediaIcon {
-    margin-right: 10px;
-    font-size: 1.2rem;
-  }
-
-  .contactRow {
-    font-size: 0.9rem;
-  }
-
-  .copyright {
-    font-size: 0.9rem;
-  }
-}
-
-
-
-
 /* ---- TABLET ---- */
 @media screen and (max-width: 850px) {
   
@@ -1348,8 +1277,8 @@ padding: 0.5rem;
     font-size: 3rem;
   }
 
-  .homeHeading span {
-    font-size: 3.9rem;
+  .homeHeading b {
+    font-size: 4rem;
   }
 
   .homeImgCol {
@@ -1401,10 +1330,6 @@ padding: 0.5rem;
     padding: 0px 10%;
   }
 
-  .homeHeading span {
-    font-size: 3.9rem;
-  }
-
   .homeImgCol {
     margin: 50px auto 0 auto;
   }
@@ -1432,8 +1357,90 @@ padding: 0.5rem;
   }
 }
 
+
+
+
 /* ---- PHONES ---- */
 @media screen and (max-width: 650px) {
+  .navbar-brand {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+  }
+
+  .homeHeading, .about-title b, .menu-title b {
+    font-size: 3rem;
+  }
+
+  .col-lg-4.col-sm-4.col-4 {
+    padding: 0 6px;
+  }
+
+  #menuSection {
+    padding: 1% 5% 5%;
+  }
+
+  .product-box-layout4 .item-figure {
+    height: 130px;
+  }
+
+  .item-content .card-title {
+    font-size: 1.1rem;
+  }
+
+  .product-box-layout4 {
+    padding: 10px;
+  }
+
+  .product-box-layout4 .item-content {
+    padding: 15px 0 0;
+  }
+
+  .col-sm-6.col-12 .card {
+    margin-bottom: 15px;
+  }
+
+  .eatSure {
+    margin-bottom: 30px;
+  }
+
+  .safetyMeasures {
+    margin-top: 12%;
+  }
+
+  /* ABOUT SECTION */
+
+  /* safety icons */
+  .col-sm-3.col-6 {
+    margin-bottom: 1.5rem;
+  }
+
+  .borderLeft {
+    border-left: 1px solid transparent;
+  }
+
+  /* TESTIMONIAL SECTION */
+  b {
+    font-size: 3rem;
+    padding: 0;
+  }
+
+  .footerHeadingCol h2 {
+    font-size: 2.5rem !important;
+  }
+
+  .socialMediaIcon {
+    margin-right: 10px;
+    font-size: 1.2rem;
+  }
+
+  .contactRow {
+    font-size: 0.9rem;
+  }
+
+  .copyright {
+    font-size: 0.9rem;
+  }
+
   #contactSection {
     padding: 0;
     margin-top: 0;
@@ -1446,19 +1453,6 @@ padding: 0.5rem;
   .contactInfo, .box {
     display: block;
     margin: 0rem;
-  }
-
-  .navbar-brand {
-    font-size: 2.5rem;
-    margin-bottom: 5px;
-  }
-
-  .homeHeading {
-    font-size: 2.8rem;
-  }
-
-  .homeHeading span {
-    font-size: 3.6rem;
   }
 
   .col-lg-4.col-sm-4.col-4 {

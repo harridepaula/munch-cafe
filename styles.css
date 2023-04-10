@@ -10,15 +10,15 @@
 /* GENERAL STYLES */
 
 body {
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Oswald', sans-serif;
   /* sets font family for entire page */
   background-color: #484a47;
 }
 
 #pretzel {
-  padding-top:5px;
-  height: 80px;
-  width: 80px;
+    padding-top: 12px;
+    height: 80px;
+    width: 70px;
 }
 
 p {
@@ -54,10 +54,12 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
 }
 
 .navbar-brand {
-  font-family: "elinga", "myFirstFont", "Roboto";
+  font-family: 'Oswald', sans-serif;
   font-weight: 500;
   /* font-size: 0.5rem; */
   font-size: 56px;
+  position: relative;
+  top: -4px;
 }
 
 .nav-item
@@ -69,7 +71,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
 
 div#navbarSupportedContent {
   position: relative;
-  top: -6px;
+  top: -3px;
 }
 
 .fixed-top {
@@ -79,7 +81,6 @@ div#navbarSupportedContent {
 /* HOME SECTION */
 .home-container {
   height: 100vh;
-  width: 132vw;
   display: flex;
   justify-content: center;
 }
@@ -101,10 +102,7 @@ div#navbarSupportedContent {
   flex-direction: column;
   justify-content: flex-start;
   align-items: left;
-  padding-top: 8%;
-  padding-right: 10%;
-  padding-left: 5%;
-  text-align: left;
+  padding: 12% 10% 5% 8%;
 }
 
 .homeHeading {
@@ -115,9 +113,9 @@ div#navbarSupportedContent {
 /* Style the INEBRIATES to red color */
 .homeHeading span {
   color: black;
-  -webkit-text-stroke: 0.14vw rgb(44, 42, 42);
+  -webkit-text-stroke: 0.14vw rgb(0, 0, 0);
   letter-spacing: 2px;
-  stroke: #ffa5d8;
+  stroke: black;
   stroke-width: 3;
   position: relative;
   animation: textAnimate 5s infinite alternate;
@@ -126,12 +124,11 @@ div#navbarSupportedContent {
 .homeHeading span::before {
   content: attr(data-text);
   position: absolute;
-  top: 0;
   left: 0;
   width: 0;
   height: 100%;
   color: #F28482;
-  -webkit-text-stroke: 0vw rgb(44, 42, 42);
+  -webkit-text-stroke: 0.18vw #F28482;
   border-right: 3px solid #F28482;
   overflow: hidden;
   animation: animate 6s linear infinite;
@@ -216,9 +213,8 @@ div#navbarSupportedContent {
 /* MENU SECTION */
 
 #menuSection {
-  padding-top: 1%;
+  padding: 10% 5%;
   background-color: #f28482;
-  padding: 40px 60px;
 }
 
 #menuSection .container h1 {
@@ -232,7 +228,6 @@ div#navbarSupportedContent {
   background-color: white;
   color: #6f1a07;
   padding: 1px 5px;
-  font-family: "Roboto";
 }
 
 .product-box-layout4 {
@@ -501,25 +496,23 @@ div#navbarSupportedContent {
   font-size: 1.3rem;
 }
 
-/* HYGIENE SECTION */
-#healthySection {
-  padding-top: 0.5%;
+/* ABOUT SECTION */
+#aboutSection {
   background-color: #000000;
-  padding: 40px 60px;
-}
-
-#healthySection .hygiene-title {
+  padding: 10% 5%;
   text-align: center;
-  margin: 50px auto;
-}
+  background-color: #84a59d;
+  }
 
-#healthySection .hygiene-title span {
+#aboutSection .about-title span {
   font-size: 5rem;
   border: 1px solid #F6BD60;
   background-color: white;
   color: #F6BD60;
-  padding: 0.5rem 2rem;
-  font-family: "Roboto";
+}
+
+.safetyMeasures p {
+  font-weight: 500;
 }
 
 .eatSure {
@@ -619,6 +612,7 @@ textarea#note {
 
 .safetyMeasures .col-sm-3 p {
   margin-top: 10px;
+  font-weight: 300;
 }
 
 .container.safetyMeasuresDiv img {
@@ -643,7 +637,6 @@ footer {
 }
 
 .footerHeadingCol h2 {
-  font-family: "elinga", "Roboto";
   font-weight: 600;
   font-size: 3rem;
 }
@@ -694,9 +687,9 @@ footer a {
 
 /* SECTIONS */
 #menuSection {
-  padding-top: 0.5%;
+  padding-top: 10%;
   background-color: #f28482;
-  padding-bottom: 4%;
+  padding-bottom: 12%;
 }
 
 .menu-title {
@@ -710,33 +703,25 @@ footer a {
     background-color: white;
     color: #84a59d;
     padding: 0.5rem 2rem;
-    font-family: "Roboto";
-}
-
-#healthySection {
-  padding-top: 0.5%;
-  background-color: #84a59d;
-  padding-bottom: 4%;
 }
 
 #testimonialsSection {
-  padding-top: 0.5%;
   background-color: #000;
-  padding: 40px 60px;
+  padding-top: 12%;
+  padding-bottom: 10%;
 }
 
-.hygiene-title {
+.about-title {
   text-align: center;
   margin: 50px auto;
 }
 
-.hygiene-title span {
+.about-title span {
   font-size: 5rem;
   border: 1px solid #84a59d;
   background-color: white;
   color: #84a59d;
   padding: 0.5rem 2rem;
-  font-family: "Roboto";
 }
 
 .testimonials h3 {
@@ -745,7 +730,6 @@ footer a {
   background-color: white;
   color: #84a59d;
   padding: 1px 5px;
-  font-family: "Roboto";
   text-align: center;
   margin: 50px auto;
 }
@@ -910,7 +894,11 @@ footer a {
   border: 1px solid white;
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 880px) {
+  .container .contactInfo .box .icon {
+    display: none;
+  }
+
   .navbar-brand {
     font-size: 3rem;
     margin-bottom: 5px;
@@ -1046,25 +1034,13 @@ footer a {
     height: 229px;
   }
 
-  #menuSection {
-    width: 145vw;
-  }
 
-  #healthySection {
-    width: 145vw;
-  }
-
-  #footer {
-    width: 145vw;
-  }
 }
 
 /* checkout icons */
 .checkIcon {
   color: green;
 }
-
-
 
 
 
@@ -1083,10 +1059,10 @@ footer a {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
-.contact {
+#contactSection {
   position: relative;
   min-height: 100hv;
   padding: 50px 100px;
@@ -1101,25 +1077,26 @@ footer a {
   height: 100vh;
 }
 
-.contact .content {
+#contactSection .content {
   display: flex;
   flex-direction: column;
   max-width: 800px;
   text-align: center;
 }
 
-.contact .content h2 {
+#contactSection .content h2 {
   font-size: 50px;
   font-weight: 400;
   color: #f7ede2;
 }
-.contact .content p {
+#contactSection .content p {
   padding-top: 4px;
   font-size: 26px;
   font-weight: 275;
   color: #f7ede2;
   margin-bottom: 50px;
 }
+
 .container {
   width: 100%;
   display: flex;
@@ -1237,7 +1214,6 @@ footer {
 }
 
 .footerHeadingCol h2 {
-  font-family: "elinga", "Roboto";
   font-weight: 600;
   font-size: 3rem;
 }
@@ -1545,6 +1521,11 @@ footer a {
   .copyright {
     font-size: 0.9rem;
   }
+
+  #footer {
+    position: relative;
+    top: 200px
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -1576,7 +1557,8 @@ footer a {
     flex-direction: row;
     gap: 10px;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
+    margin-left: 5%;
   }
 
   .contactForm {
@@ -1593,14 +1575,6 @@ footer a {
   .homeImgCol {
     width: 244px;
     height: 229px;
-  }
-
-  #menuSection {
-    width: 145vw;
-  }
-
-  #healthySection {
-    width: 145vw;
   }
 
   #footer {

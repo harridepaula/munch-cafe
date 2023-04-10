@@ -1,15 +1,6 @@
 let food = [];
 let totalAmount = 0;
 
-$(document).ready(function () {
-  if ($(document).width() <= 992) {
-    $(".navbar-nav").removeClass("ml-auto");
-    $(".navbar-nav").addClass("mr-auto");
-  } else {
-    $(".navbar-nav").removeClass("mr-auto");
-    $(".navbar-nav").addClass("ml-auto");
-  }
-
   var scrollToTopBtn = $("#scrollToTop");
 
   $(window).scroll(function () {
@@ -227,7 +218,7 @@ $(document).ready(function () {
         totalAmount
     );
   }
-});
+
 
 function openWhatsapp() {
   // console.log($('#address'));

@@ -88,7 +88,7 @@ header {
 }
 
 .navbar a:active {
-  color: var(--color-darkpink)
+  color: var(--color-darkpink);
 }
 
 #menu-icon {
@@ -108,6 +108,10 @@ header {
 
 .shoppingCart a:hover {
   color: var(--color-mint)
+}
+
+.fa-shopping-cart:before {
+  padding-right: 10px;
 }
 
 
@@ -987,11 +991,11 @@ footer a {
   }
 
   .nav-item:hover {
-    color: var(--color-yellow)
+    color: var(--color-yellow);
   }
 
   .nav-item:active {
-    color: var(--color-darkpink)
+    color: var(--color-darkpink);
   }
 
   .navbar.open {
@@ -1061,11 +1065,6 @@ footer a {
     margin-top: 30px;
   }
 
-  .homeImgCol {
-    width: 244px;
-    height: 229px;
-  }
-
   .socialMedia {
     scale: 0.8;
   }
@@ -1084,16 +1083,6 @@ footer a {
     justify-content: center;
     align-items: center;
     margin-left: 32%;
-  }
-
-  .homeTxtCol {
-    padding-top: 73px;
-    margin-top: 30px;
-  }
-
-  .homeImgCol {
-    width: 15rem;
-    height: 15rem;
   }
 
 .box .text {
@@ -1153,16 +1142,6 @@ padding: 0.5rem;
     font-size: 4rem;
   }
 
-  .homeImgCol {
-    margin: 50px auto 0 auto;
-  }
-
-  .homeImg {
-    width: auto;
-    height: 100%;
-    margin-left: 10px !important;
-  }
-
   .product-box-layout4 .item-figure {
     height: 200px;
   }
@@ -1187,16 +1166,6 @@ padding: 0.5rem;
   .homeHeading {
     font-size: 3rem;
     padding: 0px 10%;
-  }
-
-  .homeImgCol {
-    margin: 50px auto 0 auto;
-  }
-
-  .homeImg {
-    width: auto;
-    height: 100%;
-    margin-left: 10px !important;
   }
 
   #menuSection, #aboutSection {

@@ -184,9 +184,9 @@ let totalAmount = 0;
           food[i][0] +
           '</p> <p class="text-muted-small">' +
           food[i][3] +
-          '<p></div><i class="fas fa-rupee-sign"> ' +
+          '<p></div><i class="fas fa-pound-sign"> ' +
           food[i][2] +
-          '</i></p>  </div>  <div class="col-2"> <p class="text-muted-small" > <i class="fas fa-rupee-sign"></i> ' +
+          '</i></p>  </div>  <div class="col-2"> <p class="text-muted-small" > <i class="fas fa-pound-sign"></i> ' +
           food[i][1] * food[i][2] +
           '</p>  <span class="cartQuantity"> ' +
           " <span> Qty : </span>" +
@@ -214,7 +214,7 @@ let totalAmount = 0;
     $(".totalAmountDiv").empty();
     $(".totalAmountDiv").append(
       '<span class="totalAmountText">TOTAL AMOUNT : </span><br/>' +
-        '<i class="fas fa-rupee-sign"></i> ' +
+        '<i class="fas fa-pound-sign"></i> ' +
         totalAmount
     );
   }

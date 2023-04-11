@@ -44,7 +44,6 @@ a:hover {
 
 nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
   padding-top: 10px;
-  flex-wrap: nowrap;
 }
 
 .navbar-brand {
@@ -1059,7 +1058,7 @@ padding: 0.5rem;
 
 /* ---- TABLETS ---- */
 @media screen and (max-width: 850px) {
-
+  
   .contactInfo, .box {
     display: block;
     margin-bottom: 2rem;

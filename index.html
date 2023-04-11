@@ -48,53 +48,60 @@
       crossorigin="anonymous"
     />
 
+    <!--  NAVBAR ICONS -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
     <!-- CSS -->
     <link href="https://copyfonts.com/fonts/attari-salees.html" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <div class="container">
-        <!-- NAVIGATION BAR -->
-        <a class="navbar-brand" href="index.html">
+    <!-- NAVIGATION BAR -->
+    <header>
+      <!-- LOGO -->
+      <div class="navbar-brand">
+        <a href="index.html">
           <img
             id="pretzel"
             src="./images/loading-pretzel.gif"
             alt="navbar-logo"
           />MUNCH</a>
+        </div>
 
-        <div id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
+          <!-- NAVIGATION LIST -->
+          <ul class="navbar list-unstyled">
             <li class="nav-item active">
-              <a class="nav-link px-3" href="#"
+              <a class="nav-link" href="#"
                 >Home <span class="sr-only">(current)</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link px-4" href="#menuSection">Menu</a>
+              <a href="#menuSection">Menu</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link px-4" href="#aboutSection">About</a>
+              <a href="#aboutSection">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link px-4" href="#contactSection">Contact Us</a>
+              <a href="#contactSection">Contact</a>
             </li>
           </ul>
-        </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <span
-          class="shoppingCart"
-          data-toggle="modal"
-          data-target="#exampleModal"
-        >
-          <i class="fas fa-shopping-cart"></i>
-          <span class="shoppingCartAfter">0</span>
-        </span>
-      </div>
-    </nav>
+          
+          <!-- SHOPPING CART -->
+        <div
+        class="shoppingCart"
+        data-toggle="modal"
+        data-target="#exampleModal"
+      >
+        <i class="fas fa-shopping-cart"></i>
+        <span class="shoppingCartAfter">0</span>
+    </div>
+
+          <!--  HAMBURGER MENU -->
+          <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
 
     <a id="scrollToTop" class="btn"><i class="fas fa-caret-up"></i></a>
 
@@ -1809,10 +1816,11 @@
     </section>
 
     <section id="aboutSection">
-      <h1 class="about-title">
-        <span><b>ABOUT US</b></span>
-      </h1>
+      <span class="about-title">
+        <h1><b>ABOUT US</b></h1>
+      </span>
       <br>
+      <p>What do we stand for?</p>
       <br>
       <div class="eatSure container">
         <div class="row">
@@ -1938,10 +1946,10 @@
               src="./svg/mask.svg"
               alt="Our Kitchen executives have been instructed to wear masks at all times."
             />
-            <p>
+            <small>
               Our kitchen executives wear masks at all
               times.
-            </p>
+            </small>
           </div>
 
           <div class="col-sm-3 col-6">
@@ -1949,10 +1957,10 @@
               src="./svg/thermo.svg"
               alt="A daily log of our executives’ body temperatures is being maintained."
             />
-            <p>
+            <small>
               A daily log of our executives' body temperatures is being 
               maintained.
-            </p>
+            </small>
           </div>
 
           <div class="col-sm-3 col-6">
@@ -1960,9 +1968,9 @@
               src="./svg/sanitizer.svg"
               alt="Every kitchen executive sanitizes his/her hands every hour."
             />
-            <p>
+            <small>
               Every kitchen executive sanitizes his/her hands every hour.
-            </p>
+            </small>
           </div>
 
           <div class="col-sm-3 col-6">
@@ -1970,10 +1978,10 @@
               src="./svg/clean.svg"
               alt="Every kitchen surface is rigorously cleaned to ensure a sanitized workstation."
             />
-            <p>
+            <small>
               Every workstation is rigorously cleaned to ensure a 
               sanitized space.
-            </p>
+            </small>
           </div>
         </div>
       </div>

@@ -36,22 +36,28 @@ a:hover {
 }
 
 /* NAVBAR SECTION */
-.navbar-expand-lg {
-  background-color: #000000;
-  z-index: 2;
-  height: 74px;
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 5px 5%;
+  transition: all .50s ease;
 }
 
-nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
-  padding-top: 10px;
-}
-
-.navbar-brand {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 500;
-  font-size: 56px;
+.navbar-brand a {
+  color: var(--color-yellow);
   position: relative;
-  top: 3px;
+  top: -3px;
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: 500;
 }
 
 #pretzel {
@@ -59,17 +65,51 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
   height: 80px;
   width: 70px;
   position: relative;
-  top: -10px;
+  top: -3px;
 }
 
-.nav-item {
+.navbar {
+  display: flex;
+}
+
+.navbar a {
+  color: black;
+  list-style: none;
+  text-decoration: none;
   font-size: 1.1rem;
   font-weight: 500;
+  padding: 5px 0;
+  margin: 0px 2rem;
+  transition: all .50s ease;
 }
 
-.fixed-top {
-  z-index: 11;
+.navbar a:hover {
+  color: var(--color-yellow)
 }
+
+.navbar a:active {
+  color: var(--color-darkpink)
+}
+
+#menu-icon {
+  font-size: 35px;
+  cursor: pointer;
+  z-index: 10001;
+  display: none;
+}
+
+.shoppingCart {
+  display: flex;
+  position: relative;
+  top: -6px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.shoppingCart a:hover {
+  color: var(--color-mint)
+}
+
 
 /* HOME SECTION */
 .home-container {
@@ -455,7 +495,7 @@ transform: rotate(45deg);
 
         /* ABOUT SECTION */
 #aboutSection {
-  padding: 10% 5%;
+  padding: 15% 5% 7%;
   text-align: center;
   background-color: #84a59d;
   width: 100%;
@@ -569,13 +609,7 @@ textarea#note {
 }
 
 /* FOOTER SECTION */
-.h2 {
-  color: #F6BD60;
-}
 
-      /* Footer */
-
-      /* Footer */
       footer {
         background-color: #0d1010;
         color: #F6BD60;
@@ -603,7 +637,7 @@ textarea#note {
         font-size: 1rem;
         line-height: 1.5;
         color: #bbb;
-        }
+        }  
         
         footer .nav {
         flex: 1;
@@ -710,7 +744,7 @@ footer a {
 
 /* SECTIONS */
 #menuSection {
-  padding-top: 10%;
+  padding: 15% auto 10%;
   background-color: #f28482;
   padding-bottom: 12%;
 }
@@ -810,7 +844,7 @@ footer a {
   font-weight: 400;
   color: #f7ede2;
 }
-#contactSection .content p {
+#contactSection .content p, #aboutSection p {
   padding-top: 4px;
   font-size: 26px;
   font-weight: 275;
@@ -932,6 +966,42 @@ footer a {
 
 /* ---- DESKTOP ---- */
 @media screen and (max-width: 1000px) {
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    padding: 0px 5px;
+    width: 200px;
+    height: 25vh;
+    color: white;
+    background: #cae6df;
+    border-radius: 10px;
+    transition: all .50s ease;
+  }
+
+  .nav-item {
+    display: block;
+    margin: 12px 0;
+    transition: all .50s ease;
+    margin: 0px;
+  }
+
+  .nav-item:hover {
+    color: var(--color-yellow)
+  }
+
+  .nav-item:active {
+    color: var(--color-darkpink)
+  }
+
+  .navbar.open {
+    right: 2%;
+  }
+
+  #menu-icon {
+    display: block;
+  }
+
   .footerHeadingCol h2 {
     font-size: 3rem;
   }
@@ -951,16 +1021,10 @@ footer a {
     margin-left: 32%;
   }
 
-  .navbar {
-    height: 14vh;
-  }
-
   .shoppingCart {
-    padding-top: 5px;
+    display: flex;
     font-size: 1.4rem;
-    position: relative;
-    right: 1rem;
-    top: -0.5rem;
+    top: 0px;
   }
 
   #contactus-container {
@@ -1022,10 +1086,6 @@ footer a {
     margin-left: 32%;
   }
 
-  .navbar {
-    height: 14vh;
-  }
-
   .homeTxtCol {
     padding-top: 73px;
     margin-top: 30px;
@@ -1080,11 +1140,6 @@ padding: 0.5rem;
     font-size: 14px;
   }
 
-  .navbar-brand {
-    font-size: 3rem;
-    margin-bottom: 5px;
-  }
-
   .homeTxtCol {
     padding-right: 0;
     padding-left: 0;
@@ -1108,14 +1163,6 @@ padding: 0.5rem;
     margin-left: 10px !important;
   }
 
-  #menuSection {
-    padding: 1% 10px 5%;
-  }
-
-  #menu-container {
-    display: block;
-  }
-
   .product-box-layout4 .item-figure {
     height: 200px;
   }
@@ -1130,11 +1177,6 @@ padding: 0.5rem;
 
   .footerHeadingCol h2 {
    font-size: 2rem;
-  }
-
-  .navbar-brand {
-    font-size: 3rem;
-    margin-bottom: 5px;
   }
 
   .homeTxtCol {
@@ -1157,8 +1199,8 @@ padding: 0.5rem;
     margin-left: 10px !important;
   }
 
-  #menuSection {
-    padding: 1% 10px 5%;
+  #menuSection, #aboutSection {
+    padding: 20% 10px 15%;
   }
 
   .product-box-layout4 .item-figure {
@@ -1179,9 +1221,8 @@ padding: 0.5rem;
 
 /* ---- PHONES ---- */
 @media screen and (max-width: 650px) {
-  .navbar-brand {
+  .navbar-brand a {
     font-size: 2.5rem;
-    margin-bottom: 5px;
   }
 
   .homeHeading, .about-title b, .menu-title b {
@@ -1192,6 +1233,7 @@ padding: 0.5rem;
     padding: 0 6px;
   }
 
+  /* MENU SECTION */
   #menuSection {
     padding: 1% 5% 5%;
   }
@@ -1216,6 +1258,8 @@ padding: 0.5rem;
     margin-bottom: 15px;
   }
 
+  /* ABOUT SECTION */
+
   .eatSure {
     margin-bottom: 30px;
   }
@@ -1223,8 +1267,6 @@ padding: 0.5rem;
   .safetyMeasures {
     margin-top: 12%;
   }
-
-  /* ABOUT SECTION */
 
   /* safety icons */
   .col-sm-3.col-6 {
@@ -1235,7 +1277,7 @@ padding: 0.5rem;
     border-left: 1px solid transparent;
   }
 
-  /* TESTIMONIAL SECTION */
+  /* CONTACT SECTION */
   b {
     font-size: 3rem;
     padding: 0;
